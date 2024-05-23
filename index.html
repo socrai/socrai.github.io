@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-white dark:bg-zinc-800" id="landing">
+        <nav class="fixed w-[100%] bg-blue-500 dark:bg-zinc-900 text-white p-4 flex justify-between items-center z-10">
+            <a href="#landing">
+            <div class="flex items-center space-x-2 h-12">
+                <img src="logo.png" alt="Logo" class="h-8 w-8 rounded-full">
+                <div class="text-2xl font-bold">SocrAI</div>
+            </div>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="#testimonials" class="hover:underline">Testimonials</a>
+                <a href="#landing" class="hover:underline">Program</a>
+                <a href="#mentorsaccomplishments" class="hover:underline">Mentors</a>
+                <a href="#accomplishments" class="hover:underline">Accomplishments</a>
+                <a href="https://forms.gle/NQLteUTGYisKCAd5A" class="bg-green-500 dark:bg-zinc-700 text-white px-4 py-2 rounded-lg">Apply</a>
+            </div>
+        </nav>
+        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4 pt-32">
+            <div class="flex items-center justify-center">
+                <img src="biglogo.png" alt="Summer Research Program" class="rounded-lg shadow-lg z-0">
+            </div>
+            <div class="flex flex-col justify-center">
+                <h1 class="text-3xl font-bold text-center md:text-left z-10">Join The SocrAI Program</h1>
+                <p class="text-lg text-center md:text-left z-10">Have you ever wanted to explore cutting-edge research opportunities in a supportive environment? Explore the boundaries and intersections of machine learning and different fields? Be <b>guaranteed</b> the opportunity to work on and be an author of a research paper? Look no further than SocrAI and our <a href="#mentorsaccomplishments" class="underline hover:overline">extensively qualified</a> mentors!</p>
+                <button class="button bg-green-500 dark:bg-zinc-700 text-white px-4 py-2 rounded-lg mt-4 z-0" onclick=" window.open('https://forms.gle/NQLteUTGYisKCAd5A', '_blank'); return false;">Apply Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-zinc-100 dark:bg-zinc-800 py-12" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold text-zinc-900 dark:text-white text-center mb-4">Customer Testimonials</h1>
+            <p class="text-lg text-zinc-600 dark:text-zinc-300 text-center mb-8">See what our customers have to say about us</p>
+            <div class="flex flex-wrap justify-center">
+                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"Thanks to SocrAI's dedicated instruction, I was able to qualify to numerous olympiads and learned a lot about programming in general. These olympiads include the American Invitational Mathematics Exam and USACO (USA Computing Olympiad) Gold division! I highly recommend SocrAI to parents and students. "</p>
+                    <div class="flex items-center">
+                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
+                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Anish B</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"I love SocrAI! Thanks to them, I have learned a great deal about machine learning, which empowered me to do many personal projects as well as work on a paper! I used groundbreaking technology such as Direct Preference Optimization instead of RLHF to train Natural Language Processing models!"</p>
+                    <div class="flex items-center">
+                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
+                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Daniel A</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"I am extremely pleased with the guidance I received from SocrAI on research! I have learned a lot from SocrAI and am in the process of further editing my manuscript that they have helped me contribute toward!"</p>
+                    <div class="flex items-center">
+                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
+                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Anirudh S</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white dark:bg-zinc-800 p-8" id="accomplishments">
+        <div class="flex justify-between items-center">
+            <div class="flex-1 text-center">
+                <p class="text-6xl font-bold text-zinc-800 dark:text-zinc-200" id="number1">1+</p>
+                <p class="text-lg text-black dark:text-zinc-300">Publications</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400">We have published our novel research in over 5 distinct venues.</p>
+            </div>
+            <div class="flex-1 text-center">
+                <p class="text-6xl font-bold text-zinc-800 dark:text-zinc-200" id="number2">1+</p>
+                <p class="text-lg text-black dark:text-zinc-300">Olympiad Qualifications</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400">Although the current cohort is completely ML-oriented, our previous olympiad students have qualified to over 10 olympiads. </p>
+            </div>
+            <div class="flex-1 text-center">
+                <p class="text-6xl font-bold text-zinc-800 dark:text-zinc-200" id="number3">1+</p>
+                <p class="text-lg text-black dark:text-zinc-300">Satisfied Patrons</p>
+                <p class="text-xs text-zinc-500 dark:text-zinc-400">Over 20 of our program's clients were satisfied with the experiences our program had to offer, for a full satisfaction rate.</p>
+            </div>
+        </div>
+        <div class="flex justify-between mt-8">
+            <img src="paper.png" alt="Research" class="mx-auto" />
+            <img src="olympiads.png" alt="Olympiads" class="mx-auto" />
+            <img src="satisfied.png" alt="Satisfied" class="mx-auto" />
+        </div>
+    </div>
+    <div class="bg-gradient-to-br bg-zinc-100 dark:bg-zinc-800 text-black dark:from-red-700 dark:to-red-900" id="mentorsaccomplishments">
+        <h2 class="text-3xl font-bold text-center mb-2">Our Mentors' Accomplishments</h2>
+        <p class="text-lg text-center mb-4">Learn from the best in the industry. Our mentors have attained and tutored high school students to attain these qualifications in the past, and have done so consistently.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+            <div class="p-4">
+                <img src="ieee_mb_blue_3015.png" alt="IEEE Publications" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous">
+                <h3 class="text-3xl font-bold mt-2 text-center">IEEE Publications</h3>
+            </div>
+            <div class="p-4">
+                <img src="icpc.png" alt="ICPC" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous" title="ICPC">
+                <h3 class="text-3xl font-bold mt-2 text-center">ICPC</h3>
+            </div>
+            <div class="p-4">
+                <img src="icmla.png" alt="ICMLA Publications" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous" title="ICMLA Publications">
+                <h3 class="text-3xl font-bold mt-2 text-center">ICMLA Publications</h3>
+            </div>
+            <div class="p-4">
+                <img src="isef.png" alt="ISEF Qualifications" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous" title="ISEF Qualifications">
+                <h3 class="text-3xl font-bold mt-2 text-center">ISEF Qualifications</h3>
+            </div>
+            <div class="p-4">
+                <img src="usaco.png" alt="USACO Platinum" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous" title="USACO Platinum">
+                <h3 class="text-3xl font-bold mt-2 text-center">USACO Platinum</h3>
+            </div>
+            <div class="p-4">
+                <img src="usapho.png" alt="USAPhO" class="w-full h-40 md:h-48 object-cover rounded" crossorigin="anonymous" title="USAPhO">
+                <h3 class="text-3xl font-bold mt-2 text-center">USAPhO</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        const numbers = document.getElementById("accomplishments").querySelectorAll('.font-bold');
+        numbers.forEach((number, index) => {
+            const realValue = 5 * 2 ** index;
+            let currentValue = 1;
+            const increment = Math.ceil(realValue / 100); // Increment by 1% of real value
+            const interval = setInterval(() => {
+                number.textContent = `${currentValue}+`;
+                currentValue += increment;
+                if (currentValue > realValue) {
+                    number.textContent = `${realValue}+`;
+                    clearInterval(interval);
+                }
+            }, 50); // Update every 50ms
+        });
+    </script>
+</body>
+</html>

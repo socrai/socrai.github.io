@@ -1,151 +1,201 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="bg-white dark:bg-zinc-800" id="landing">
-        <nav class="fixed w-[100%] bg-blue-500 dark:bg-zinc-900 text-white p-4 flex justify-between items-center z-10">
-            <a href="/">
-            <div class="flex items-center space-x-2 h-12">
-                <img src="logo.png" alt="Logo" class="h-8 w-8 rounded-full">
-                <div class="text-2xl font-bold">SocrAI</div>
-            </div>
-            </a>
-            <div class="flex items-center space-x-4">
-                <a href="testimonials.html" class="hover:underline">Testimonials</a>
-                <a href="program.html" class="hover:underline">Program</a>
-                <a href="/#mentorsaccomplishments" class="hover:underline">Mentors</a>
-                <a href="accomplishments.html" class="hover:underline">Accomplishments</a>
-                <a href="https://forms.gle/NQLteUTGYisKCAd5A" class="bg-green-500 dark:bg-zinc-700 text-white px-4 py-2 rounded-lg">Apply</a>
-            </div>
-        </nav>
-        <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4 pt-32">
-            <div class="flex items-center justify-center">
-                <img src="biglogo.png" alt="Summer Research Program" class="rounded-lg shadow-lg z-0">
-            </div>
-            <div class="flex flex-col justify-center">
-                <h1 class="text-3xl font-bold text-center md:text-left z-10">Testimonials</h1>
-                <p class="text-lg text-center md:text-left z-10">Read our testimonials from previous satisfied students!</p>
-                <button class="button bg-green-500 dark:bg-zinc-700 text-white px-4 py-2 rounded-lg mt-4 z-0" onclick=" window.open('https://forms.gle/NQLteUTGYisKCAd5A', '_blank'); return false;">Apply Now</button>
-            </div>
-        </div>
-    </div>
-    <div class="bg-zinc-100 dark:bg-zinc-800 py-12" id="testimonials">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-extrabold text-zinc-900 dark:text-white text-center mb-4">Customer Testimonials</h1>
-            <p class="text-lg text-zinc-600 dark:text-zinc-300 text-center mb-8">See what our customers have to say about us</p>
-            <div class="flex flex-wrap justify-center">
-                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
-                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"Thanks to SocrAI's dedicated instruction, I was able to qualify to numerous olympiads and learned a lot about programming in general. These olympiads include the American Invitational Mathematics Exam and USACO (USA Computing Olympiad) Gold division! I highly recommend SocrAI to parents and students. "</p>
-                    <div class="flex items-center">
-                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
-                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Anish B</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-8 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
-                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"I love SocrAI! Thanks to them, I have learned a great deal about machine learning, which empowered me to do many personal projects as well as work on a paper! I used groundbreaking technology such as Direct Preference Optimization instead of RLHF to train Natural Language Processing models!"</p>
-                    <div class="flex items-center">
-                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
-                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Daniel A</p>
-                    </div>
-                </div>
-                <div class="bg-white dark:bg-zinc-700 rounded-lg shadow-md p-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
-                    <p class="text-zinc-800 dark:text-zinc-200 mb-4">"I am extremely pleased with the guidance I received from SocrAI on research! I have learned a lot from SocrAI and am in the process of further editing my manuscript that they have helped me contribute toward!"</p>
-                    <div class="flex items-center">
-                        <img src="person.png" alt="Profile Picture" class="w-12 h-12 rounded-full mr-4">
-                        <p class="font-bold text-zinc-800 dark:text-zinc-200">Anirudh S</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="details">
-        <div class="flex flex-col md:flex-row bg-zinc-100 dark:bg-zinc-800 p-8">
-            <img src="pi1.png" alt="Research Program" class="w-full md:w-1/3 object-cover">
-            <div class="md:w-2/5"></div>
-            <div class="md:pl-8 mt-4 md:mt-0 md:w-1/3 md:ml-4">
-                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white">ML Sessions</h2>
-                <p class="text-lg text-zinc-600 dark:text-zinc-300 mt-4">The first week of our program is entirely dedicated to consuming ML fundamentals through lectures and work. We provide interactive ways for this learning to happen, including Jupyter Notebooks and sessions for questions! This will be a primer to guide students through research in the rest of the program.</p>
-            </div>
-        </div>
-        <div class="flex flex-col md:flex-row bg-zinc-100 dark:bg-zinc-800 p-8">
-            <div class="md:pl-8 mt-4 md:mt-0 md:w-1/3 md:ml-4">
-                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white">Research Camp</h2>
-                <p class="text-lg text-zinc-600 dark:text-zinc-300 mt-4">The next 3 weeks of our program will be dedicated to thorough research on either an assigned topic or a topic that students can choose themselves with approval. Mentors will provide resources on previous literature surrounding the topic and further prime students to research their topic, and will meet with students around 5 times a week. By the end of the program, students will have a manuscript ready to submit to journals, a process which they may be further guided on after the program.</p>
-            </div>
-            <div class="md:w-2/5"></div>
-            <img src="pi2.png" alt="Research Program" class="w-full md:w-1/3 object-cover">
-        </div>
-    </div>
-    <div class="max-w-full mx-auto" id="faq">
-        <div class="border border-black rounded-lg shadow-md dark:bg-black dark:border-zinc-700">
-          <div class="border-b border-black dark:border-zinc-700">
-            <button
-              class="w-full flex items-center justify-between px-6 py-3 bg-black text-white hover:bg-zinc-800 focus:outline-none dark:bg-zinc-800 dark:text-white"
-            >
-              <span class="text-lg font-medium">What is the duration of the program?</span>
-            </button>
-          </div>
-          <div class="p-4 bg-black text-white dark:bg-zinc-800 dark:text-white">
-            <p>The program runs for 4 weeks during the summer and has 2 cohorts, one starting in June and another starting in July!</p>
-          </div>
-          <div class="border-t border-black dark:border-zinc-700">
-            <button
-              class="w-full flex items-center justify-between px-6 py-3 bg-black text-white hover:bg-zinc-800 focus:outline-none dark:bg-zinc-800 dark:text-white"
-            >
-              <span class="text-lg font-medium">Are there any prerequisites for applying?</span>
-            </button>
-          </div>
-          <div class="p-4 bg-black text-white dark:bg-zinc-800 dark:text-white">
-            <p>No, there is no required experience to participate in this program!</p>
-          </div>
-          <div class="border-t border-black dark:border-zinc-700">
-            <button
-              class="w-full flex items-center justify-between px-6 py-3 bg-black text-white hover:bg-zinc-800 focus:outline-none dark:bg-zinc-800 dark:text-white"
-            >
-              <span class="text-lg font-medium">How and what do students learn?</span>
-            </button>
-          </div>
-          <div class="p-4 bg-black text-white dark:bg-zinc-800 dark:text-white">
-            <p>The first week of the program is dedicated to learning the fundamentals of machine learning, and the next 3 weeks are dedicated to honing skills through a comprehensive research program with mentor guidance! Navigate to Program for more details.</p>
-          </div>
-        </div>
-      </div>
-      <div
-      class="bg-black text-white dark:text-zinc-900 py-20 px-4 md:px-16 lg:px-32 xl:px-64"
-    id="contact">
-      <h2 class="text-4xl font-extrabold mb-6 text-center">Contact Us</h2>
-      <div class="flex flex-col md:flex-row items-center justify-center md:justify-between mb-6">
-        <div class="flex items-center mb-4 md:mb-0">
-          <img src="email.jpg" alt="email" class="mr-4" width="60" height="50" crossorigin="anonymous" />
-          <a href="mailto:socrai@socrai.org" class="text-xl font-semibold underline">socrai@socrai.com</a>
-        </div>
-        <div class="flex items-center">
-          <img src="phone.jpg" alt="phone" class="mr-4" width="60" height="50" crossorigin="anonymous" />
-          <p class="text-xl font-semibold">408-581-2440</p>
-        </div>
-      </div>
-      <p class="mb-6 text-lg text-center">
-        For inquiries about our Summer Research Program, feel free to reach out to us via email or
-        phone.
-      </p>
-      <div class="flex flex-col md:flex-row items-center justify-center">
-        <button class="button bg-green-500 dark:bg-zinc-700 text-white px-4 py-2 rounded-lg mt-4 z-0" onclick=" window.open('https://forms.gle/NQLteUTGYisKCAd5A', '_blank'); return false;">Apply Now</button>
+<!DOCTYPE html>
+<html lang="en">
 
-      </div>
-        <br>
-      <div class="bg-blue-500 text-white p-4 rounded-lg">
-        <h1 class="text-5xl text-center mb-2">
-          Join SocrAI and explore exciting opportunities!
-        </h1>
-      </div>
-    </div>
-    <div class="bg-zinc-950 py-4 px-4 flex justify-end items-center" id="foot">
-        <a href="terms.html" class="text-white">Website Terms</a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocrAI - Testimonials</title>
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img src="./images/soclogo.png" alt="SocrAi" width="150" height="80">
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+            
+                <li><a href="courses.html">Program</a></li>
+                <li><a href="mentor.html">Mentors</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGnmhSoSYKplbudrjTSnx9M0iSyyPhpyPP5NjedLaVtFvUxg/viewform" class="btn btn-secondary">Apply Now</a></li>
+
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+
+    <section class="about__achievements fade-up">
+        <div class="container about__achievements-container fade-up">
+            <div class="achievements__cards fade-up">
+                <article class="achievement__card fade-up">
+                    <span class="achievement__icon fade-up">
+                        <i class="uil uil-video fade-up"></i>
+                    </span>
+                    <h3>5+</h3>
+                    <p>Publications</p>
+                    <p>We have published our novel research in over 5 distinct venues.                            </p>
+                   
+                </article>
+    
+                <article class="achievement__card fade-up">
+                    <span class="achievement__icon fade-up">
+                        <i class="uil uil-users-alt fade-up"></i>
+                    </span>
+                    <h3>10+</h3>
+                    <p>Olympiad Qualifications</p>
+                    <p>Although the current cohort is completely ML-oriented, our previous olympiad students have qualified to over 10 olympiads.</p>
+                </article>
+                
+                <article class="achievement__card fade-up">
+                    <span class="achievement__icon fade-up">
+                        <i class="uil uil-award fade-up"></i>
+                    </span>
+                    <h3>20+</h3>
+                    <p>Satisfied Patrons </p>
+                    <p>Over 20 of our program's clients were satisfied with the experiences our program had to offer, for a full satisfaction rate.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="container testimonials__container mySwiper fade-up">
+        <h2>Student's Testimonials</h2>
+        <div class="swiper-wrapper fade-up">
+           
+
+            <article class="testimonial swiper-slide fade-up">
+                <div class="avatar fade-up">
+                    <img src="./images/blank.jpeg">
+                </div>
+                <div class="testimonial__info fade-up">
+                    <h5>Anish B</h5>
+                    <small></small>
+                </div>
+                <div class="testimonial__body fade-up">
+                    <p>
+                        "Thanks to SocrAI's dedicated instruction, I was able to qualify to numerous olympiads and learned a lot about programming in general. These olympiads include the American Invitational Mathematics Exam and USACO (USA Computing Olympiad) Gold division! I highly recommend SocrAI to parents and students. "
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide fade-up">
+                <div class="avatar fade-up">
+                    <img src="./images/blank.jpeg">
+                </div>
+                <div class="testimonial__info fade-up">
+                    <h5>Daniel A </h5>
+                    <small></small>
+                </div>
+                <div class="testimonial__body fade-up">
+                    <p>
+                        "I love SocrAI! Thanks to them, I have learned a great deal about machine learning, which empowered me to do many personal projects as well as work on a paper! I used groundbreaking technology such as Direct Preference Optimization instead of RLHF to train Natural Language Processing models!"
+
+
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide fade-up">
+                <div class="avatar fade-up">
+                    <img src="./images/blank.jpeg">
+                </div>
+                <div class="testimonial__info fade-up">
+                    <h5>Anirudh S                    </h5>
+                    <small></small>
+                </div>
+                <div class="testimonial__body fade-up">
+                    <p>
+                        "I am extremely pleased with the guidance I received from SocrAI on research! I have learned a lot from SocrAI and am in the process of further editing my manuscript that they have helped me contribute toward!"
+                    </p>
+                </div>
+            </article>
+
+           
+        </div>
+        <div class="swiper-pagination fade-up"></div>
+    </section>
+
+    
+    <section class="faqs fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container fade-up">
+            <article class="faq fade-up">
+                <div class="faq__icon fade-up">
+                    <i class="uil uil-plus fade-up"></i>
+                </div>
+                <div class="question__answer fade-up">
+                    <h4>What is the duration of the program?
+                        </h4>
+                    <p>
+                        The program runs for 4 weeks during the summer and has 2 cohorts, one starting in June and another starting in July!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq fade-up">
+                <div class="faq__icon fade-up">
+                    <i class="uil uil-plus fade-up"></i>
+                </div>
+                <div class="question__answer fade-up">
+                    <h4>Are there any prerequisites for applying?
+                       </h4>
+                    <p>
+                        No, there is no required experience to participate in this program!
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq fade-up">
+                <div class="faq__icon fade-up">
+                    <i class="uil uil-plus fade-up"></i>
+                </div>
+                <div class="question__answer fade-up">
+                    <h4>How and what do students learn?
+                        </h4>
+                    <p>
+                        The first week of the program is dedicated to learning the fundamentals of machine learning, and the next 3 weeks are dedicated to honing skills through a comprehensive research program with mentor guidance!
+                    </p>
+                </div>
+            </article>
+
+            
+        </div>
+    </section>
+
+   
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
+
+
 </html>

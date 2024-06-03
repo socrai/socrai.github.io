@@ -22,29 +22,62 @@
         .about-section {
             padding: 50px 0;
             text-align: center;
+            color: white;
         }
         .about-section h2 {
             font-size: 2.5em;
-            margin-bottom: 20px;
+
+            color: white;
         }
         .about-section p {
             font-size: 1.2em;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .about-grid .box {
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px; /* Adjust this value to increase/decrease spacing */
+    padding: 30px;
+
+    
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+
+}
+
+.grid-item img {
+  size:20%;
+  transform: scale(1);
+  width: 75%;
+    border-radius: 30px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
+    
+   
+
+}
+
+
+.grid-item p {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    margin: 10px; /* Adjust the margin to increase space outside the background */
+    box-sizing: border-box; 
+    color: black;
+width: 100%;
+padding: 20px;
+height: 140%;
+
+}
+
+
     </style>
 
 </head>
@@ -53,7 +86,7 @@
     <nav>
         <div class="container nav__container">
             <a href="index.html">
-                <img src="./images/soclogo.png" alt="SocrAI" width="150" height="80">
+                <img src="./images/logothesecond.png" alt="SocrAI" width="150" height="80">
             </a>
             <ul class="nav__menu">
                 <li><a href="index.html">Home</a></li>
@@ -83,22 +116,73 @@
 
             <div class="header__right fade-up">
                 <div class="header__right-image fade-up">
-                    <img src="./images/study.png" alt="">
+                    <img src="./images/study2.png" alt="">
                 </div>
             </div>
         </div>
     </header>
 
 
-         <section class="about-section ">
+         <section class="about-section fade-up">
             <h2>About</h2>
             <p>This program is designed to help students explore cutting-edge research opportunities, work with qualified mentors, and contribute to innovative projects in the field of machine learning.</p>
-            <div class="about-grid">
-                <div class="box fade-up">Explore innovative research</div>
-                <div class="box fade-up">Work with experienced mentors</div>
-                <div class="box fade-up">Contribute to meaningful projects</div>
-                <div class="box fade-up">Develop advanced skills in AI</div>
-            </div>
+            <div class="grid-container fade-up">
+                <div class="grid-item fade-up">
+                    <img src="./images/epoches.png" alt="Image 1">
+                </div>
+                <div class="grid-item fade-up">
+                    <h2>ML Sessions</h2>
+                    <p>The first week of our program is entirely
+                        dedicated to consuming ML fundamentals
+                        through lectures and work. We provide
+                        interactive ways for this learning to happen,
+                        including Jupyter Notebooks and sessions for
+                        questions! This will be a primer to guide
+                        students through research in the rest of the
+                        program.</p>
+                </div>
+                <div class="grid-item fade-up">
+                    <h2>Research Camp</h2>
+                    <p> The next 3 weeks of our program will be
+                        dedicated to thorough research on either an
+                        assigned topic or a topic that students can
+                        choose themselves with approval. Mentors will
+                        provide resources on previous literature
+                        surrounding the topic and further prime
+                        students to research their topic, and will meet
+                        with students around 5 times a week. By the
+                        end of the program, students will have a
+                        manuscript ready to submit to journals, a
+                        process which they may be further guided on
+                        after the program.</p>
+                    </div>
+                  <div class="grid-item fade-up">
+                            <img src="./images/prediction.png" alt="Image 1">
+                   </div>
+                   <div class="grid-item fade-up">
+                    <img src="./images/latent_cleanup.png" alt="Image 1">
+           </div>
+                   <div class="grid-item fade-up">
+                    <h2>Approach</h2>
+                    <p>  We believe in a consistent approach to teach
+                        students about ML and conduct research.
+                        Students will be taught in a manner that
+                        optimizes for learning by teaching the
+                        fundamentals clearly, at which point they can
+                        quickly grasp new concepts. A unique feature
+                        of our program is to require all code written by
+                        students in the course of the research to be
+                        saved and disclosed to mentors, providing
+                        thorough transparency throughout the
+                        research process and preventing students from
+                        being on papers where data was falsified.
+                        Another unique feature of our program is to
+                        allow students to theorize a roadmap for their
+                        research prior to their instruction.</p>
+                    </div>
+                  
+
+                </div>
         </section>
     
 
@@ -128,6 +212,7 @@
                             <i class="uil uil-location-point"></i>
                             <h5>San Jose, California</h5>
                         </li>
+                        
                     </ul>
                     <ul class="contact__socials">
                         <!--  <li>
@@ -157,51 +242,7 @@
             </div>
         </section>
 
-        <section class="faqs fade-up">
-            <h2>Frequently Asked Questions</h2>
-            <div class="container faqs__container fade-up">
-                <article class="faq fade-up">
-                    <div class="faq__icon fade-up">
-                        <i class="uil uil-plus fade-up"></i>
-                    </div>
-                    <div class="question__answer fade-up">
-                        <h4>What is the duration of the program?
-                            </h4>
-                        <p>
-                            The program runs for 4 weeks during the summer and has 2 cohorts, one starting in June and another starting in July!
-                        </p>
-                    </div>
-                </article>
-    
-                <article class="faq fade-up">
-                    <div class="faq__icon fade-up">
-                        <i class="uil uil-plus fade-up"></i>
-                    </div>
-                    <div class="question__answer fade-up">
-                        <h4>Are there any prerequisites for applying?
-                           </h4>
-                        <p>
-                            No, there is no required experience to participate in this program!
-                        </p>
-                    </div>
-                </article>
-    
-                <article class="faq fade-up">
-                    <div class="faq__icon fade-up">
-                        <i class="uil uil-plus fade-up"></i>
-                    </div>
-                    <div class="question__answer fade-up">
-                        <h4>How and what do students learn?
-                            </h4>
-                        <p>
-                            The first week of the program is dedicated to learning the fundamentals of machine learning, and the next 3 weeks are dedicated to honing skills through a comprehensive research program with mentor guidance!
-                        </p>
-                    </div>
-                </article>
-    
-                
-            </div>
-        </section>
+        
     
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 

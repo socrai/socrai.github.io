@@ -274,6 +274,81 @@ header {
 
 
 
+
+
+.program-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px 0;
+    color: #000000;
+    width: 75%;
+    margin-left: 10%;
+    
+    
+}
+
+.program-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cohorts {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping to the next line if the screen is too small */
+}
+
+.cohort {
+    border: 2px solid #000000;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 2;
+    min-width: 280px; /* Ensures the boxes have a minimum width */
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.cohort:hover {
+    
+    background-color: #e4e4e4;
+}
+
+.cohort h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cohort .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cohort .dates, .cohort .duration {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.special-offer {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.special-offer:hover {
+    background-color: rgb(252, 84, 84);
+   
+}
+
+
 .courses {
     margin-top: 10rem;
 }

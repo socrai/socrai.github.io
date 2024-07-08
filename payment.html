@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payment</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -33,6 +33,9 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: background 0.3s, color 0.3s;
+            width: 40%;
+            max-width: 400px;
+            margin: auto;
         }
 
         body.dark-mode .container {
@@ -42,6 +45,7 @@
 
         .description {
             margin-top: 20px;
+            text-align: left;
         }
 
         .switch {
@@ -87,7 +91,7 @@
         }
 
         .qr-code img {
-        
+         
             margin: 20px 0;
         }
 
@@ -109,9 +113,7 @@
             <img src="./images/qr.webp" alt="QR Code">
         </div>
         <div class="description">
-            <p>SocrAI uses Zelle<sup>&reg;</sup> to process student transactions.
-          Scan the code in your banking app to pay the required amount
-           The memo attached to the transaction must be the name of your student.</p>
+            <p>SocrAI uses Zelle<sup>&reg;</sup> to process student transactions. Scan the code in your banking app to pay the required amount. The memo attached to the transaction must be the name of your student.</p>
         </div>
     </div>
     <script>
